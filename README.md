@@ -2,9 +2,9 @@
 
 Compile
 
- $ eosiocpp -o eosio.token_example.wast eosio.token.cpp
- 
- $ eosiocpp -g eosio.token_example.abi eosio.token.hpp
+$ eosio-cpp -o eosio.token.wasm eosio.token.cpp
+
+$ eosio-cpp -I include -o eosio.token.wasm eosio.token.cpp --abigen
 
 Deploy
   
